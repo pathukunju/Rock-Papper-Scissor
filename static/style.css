@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+}
+div{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+button{
+    padding: 30px;
+    border-radius: 10px;
+}
+i{
+    font-size: 50px;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px red;
+    color: rgb(130, 180, 36);
+}
+button:hover{
+    color: blue;
+    background-color: yellow;
+}
