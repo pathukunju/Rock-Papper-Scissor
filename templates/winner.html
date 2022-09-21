@@ -6,12 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/static/style.css">
+    <script src="https://kit.fontawesome.com/b08614ab99.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    {% if computer == player_move%}
+    <h2>Game Tie!</h2>
+    {% else %}
+    <h2>The Winner {{pathu}}</h2>
+    {% endif %}
     
-    <h2>The winner is {{pathu}}</h2>
-    <p>The computer move was {{computer}}</p>
-    <p>The player move was {{player_move}}</p>
+
+    {% if computer == 'Rock' %}
+    <p>The computer move was <button><i class="fa-regular fa-hand-back-fist"></i></button></p>
+    {% elif computer == 'Papper' %}
+    <p>The computer move was <button><i class="fa-regular fa-hand"></i></button></p>
+    {% elif computer == 'Scissor' %}
+    <p>The computer move was<button><i class="fa-regular fa-hand-scissors"></i></button></p>
+    
+    {% endif %}
+    {% if player_move == 'Rock' %}
+    <p>The player move was <button><i class="fa-regular fa-hand-back-fist"></i></button></p>
+    {% elif player_move == 'Papper' %}
+    <p>The player move was <button><i class="fa-regular fa-hand"></i></button</p>
+    {% elif player_move == 'Scissor' %} 
+    <p>The player move was <button><i class="fa-regular fa-hand-scissors"></i></button></p>  
+    {% endif %}
+
+
+    
     
 </body>
 </html>
