@@ -5,6 +5,14 @@
 body{
     background-color: aqua;
 }
+h2{
+    text-align: center;
+    margin: 50px 50px;
+}
+p{
+    text-align: center;
+    margin: 30px;
+}
 div{
     display: flex;
     justify-content: center;
